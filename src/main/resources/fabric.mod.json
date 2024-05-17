@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "desertupdate",
+	"version": "${version}",
+	"name": "Desert Update Mod",
+	"description": "This is a desert update that I coded in 7 days.",
+	"authors": [
+		"Whalefish"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.whalefish.desertupdate.DesertUpdateMod"
+		],
+		"fabric-datagen": [
+			"net.whalefish.desertupdate.DesertUpdateModDataGenerator"
+		],
+		"client": [
+			"net.whalefish.desertupdate.DesertUpdateModClient"
+		]
+	},
+	"mixins": [
+		"desertupdate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
